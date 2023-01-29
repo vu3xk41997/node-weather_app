@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDeKNN8TWsQpGQ4q91Ps2fla-S5I-scv_A&libraries=places&callback=initMap">
+    </script>
+    <script defer src="script.js"></script>
+    <title>Weather App</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="icon-container">
+                <div class="weather-icon"><img src="http://openweathermap.org/img/wn/01d@2x.png" /></div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="general-information">
+                <div class="status" data-status>
+                    Enter a Location
+                </div>
+                <div class="location" data-location>
+                    To Find The Weather
+                </div>
+            </div>
+            <div class="detail-section">
+                <div class="detail">
+                    <div class="title">Temperature</div>
+                    <div class="value" data-temperature>TBD</div>
+                </div>
+                <div class="detail bordered">
+                    <div class="title">Feels Like</div>
+                    <div class="value" data-feel>TBD</div>
+                </div>
+                <div class="detail">
+                    <div class="title">Wind</div>
+                    <div class="value" data-wind>TBD</div>
+                </div>
+            </div>
+            <div class="city-search-container">
+                <input type="text" class="city-search" data-city-search placeholder="Enter Location">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
